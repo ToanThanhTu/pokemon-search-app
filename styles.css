@@ -1,0 +1,217 @@
+:root {
+    --background: #153131;
+    --container: #D7FDF0;
+    --screen: #B4D6D3;
+    --table: #4A001F;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    min-width: 30rem;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: var(--background);
+}
+
+h1,
+h2 {
+    margin: 2rem;
+    color: white;
+}
+
+.container {
+    background-color: var(--container);
+    width: 45rem;
+    margin: 2rem auto;
+    border-radius: 2rem;
+    padding: 2.5rem;
+    box-shadow: 1rem 1rem 0 0 black;
+}
+
+#search-label {
+    font-weight: 600;
+}
+
+#search-input,
+#search-button {
+    line-height: 2.5;
+    margin-top: 1rem;
+}
+
+#search-input {
+    padding: 0 1rem;
+    width: 20rem;
+}
+
+#search-button {
+    background-color: var(--table);
+    color: white;
+    font-weight: 400;
+    width: 10rem;
+    border-radius: 1.5rem;
+}
+
+#search-button:hover {
+    cursor: pointer;
+}
+
+.pokemon-display {
+    background-color: var(--screen);
+    margin: 1.5rem 0.5rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+.name-id {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.size {
+    font-size: 1.5rem;
+}
+
+.image-container {
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    height: 30rem;
+}
+
+#types {
+    min-height: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.type {
+    background-color: red;
+    line-height: 2;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    min-width: 5rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+table {
+    background-color: var(--table);
+    color: white;
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+tr,
+th,
+td {
+    line-height: 2;
+    border: 0.5rem solid var(--container);
+}
+
+/* Special styling for Pokémon types */
+
+.normal {
+    background-color: #b7b7aa;
+}
+
+.fire {
+    background-color: #ff6f52;
+}
+
+.water {
+    background-color: #42a1ff;
+}
+
+.electric {
+    background-color: #fecc33;
+}
+
+.grass {
+    background-color: #78cc55;
+}
+
+.ice {
+    background-color: #66ccfe;
+}
+
+.fighting {
+    background-color: #d3887e;
+}
+
+.poison {
+    background-color: #c68bb7;
+}
+
+.ground {
+    background-color: #dfba52;
+}
+
+.flying {
+    background-color: #8899ff;
+}
+
+.psychic {
+    background-color: #ff66a3;
+}
+
+.bug {
+    background-color: #aabb23;
+}
+
+.rock {
+    background-color: #baaa66;
+}
+
+.ghost {
+    background-color: #9995d0;
+}
+
+.dragon {
+    background-color: #9e93f1;
+}
+
+.dark {
+    background-color: #b59682;
+}
+
+.steel {
+    background-color: #abaabb;
+}
+
+.fairy {
+    background-color: #ed99ed;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 45%;
+    }
+}
