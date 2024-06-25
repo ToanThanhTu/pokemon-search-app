@@ -1,3 +1,4 @@
+/* Define color scheme for the app */
 :root {
     --background: #153131;
     --container: #D7FDF0;
@@ -5,35 +6,38 @@
     --table: #4A001F;
 }
 
+/* Reset padding, margin, and box-sizing for all elements */
 *,
 *::before,
 *::after {
     padding: 0;
     margin: 0;
     box-sizing: inherit;
-    /* border: 0.5px solid black; */
+    /* border: 0.5px solid black; */ /* Uncomment for debugging borders */
 }
 
 html {
-    font-size: 62.5%;
-    min-width: 30rem;
+    font-size: 62.5%; /* Sets the base font size to 10px for easier rem calculations */
+    min-width: 30rem; /* Ensures a minimum width for the app */
     font-family: "Open Sans", sans-serif;
     letter-spacing: 1px;
 }
 
 body {
-    box-sizing: border-box;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
     font-size: 1.6rem;
     text-align: center;
     background-color: var(--background);
 }
 
+/* Headings styling */
 h1,
 h2 {
     margin: 2rem;
     color: white;
 }
 
+/* App container styling */
 .container {
     background-color: var(--container);
     width: 45rem;
@@ -43,21 +47,25 @@ h2 {
     box-shadow: 1rem 1rem 0 0 black;
 }
 
+/* Makes the Search label text bold */
 #search-label {
     font-weight: 600;
 }
 
+/* Search input and button line height and margin */
 #search-input,
 #search-button {
     line-height: 2.5;
     margin-top: 1rem;
 }
 
+/* Search input styling */
 #search-input {
     padding: 0 1rem;
     width: 20rem;
 }
 
+/* Search button styling */
 #search-button {
     background-color: var(--table);
     color: white;
@@ -66,10 +74,12 @@ h2 {
     border-radius: 1.5rem;
 }
 
+/* Set pointer cursor on hover over Search button */
 #search-button:hover {
     cursor: pointer;
 }
 
+/* Pokemon result display container styling */
 .pokemon-display {
     background-color: var(--screen);
     margin: 1.5rem 0.5rem;
@@ -97,6 +107,7 @@ h2 {
     height: 25rem;
 }
 
+/* Pokemon image */
 #sprite {
     width: 20rem;
 }
@@ -211,6 +222,7 @@ td {
     background-color: #ed99ed;
 }
 
+/* Responsive web design stylings */
 @media (max-width: 600px) {
     html {
         font-size: 55%;

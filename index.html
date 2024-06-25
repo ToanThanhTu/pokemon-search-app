@@ -5,9 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Preconnect to Google Fonts for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts link for Open Sans font with various weights and styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <title>Pokémon Search App</title>
 </head>
 
@@ -15,27 +20,46 @@
     <main>
         <h2>Thanh Toan Tu</h2>
         <h1>Pokémon Search App</h1>
+
+        <!-- Container for the app -->
         <div class="container">
+
+            <!-- Search form with role attribute for accessibility -->
             <form role="search" id="search-form">
+                <!-- Search Label, Input and Button to search using Pokemon Name or ID -->
                 <label for="search-input" id="search-label">Search for Pokémon Name or ID:</label>
                 <input type="text" id="search-input" required>
                 <button type="button" id="search-button">Search</button>
             </form>
-            <div class="output">   
+
+            <!-- Container for displaying search results -->
+            <div class="output">
+
+                <!-- Container for displaying a single Pokémon's details -->
                 <div class="pokemon-display">
+
+                    <!-- Container for Pokémon's name and ID -->
                     <div class="name-id">
                         <span id="pokemon-name"></span>
                         <span id="pokemon-id"></span>
                     </div>
+
+                    <!-- Container for Pokémon's weight and height -->
                     <div class="size">
                         <span id="weight"></span>
                         <span id="height"></span>
                     </div>
+
+                    <!-- Container for Pokémon's image -->
                     <div class="image-container">
                     </div>
+
+                    <!-- Container for displaying Pokémon's types -->
                     <div id="types">
                     </div>
                 </div>
+
+                <!-- Table for Pokémon's stats -->
                 <div class="pokemon-stats">
                     <table>
                         <tr>
